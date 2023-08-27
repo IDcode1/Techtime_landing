@@ -1,0 +1,30 @@
+/* amazing */
+@import url('https://fonts.cdnfonts.com/css/motira?styles=23098');
+/* maria */
+@import url('https://fonts.cdnfonts.com/css/honest-maria?styles=150437');
+/* clingy */
+@import url('https://fonts.cdnfonts.com/css/clingy');
+/* arima koshi */
+@import url('https://fonts.cdnfonts.com/css/arima-koshi?styles=21821');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.focus {
+    @apply focus:outline-none focus-visible:ring-2 ring-offset-4 ring-white ring-offset-brightblue rounded-sm 
+};
+
+.courses_btn {
+    @apply p-2 hover:bg-white hover:rounded-md hover:text-brightblue focus:outline-none hover:ring hover:ring-brightblue transition-colors
+};
+
+/* .testimonial-card {
+    @apply w-full flex flex-col flex-shrink-0 snap-center justify-center space-y-2 bg-white p-4 rounded-md shadow-md text-justify text-xs text-tinytext lg:text-sm 
+} */
+  

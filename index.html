@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <title>TechTime</title>
+  </head>
+  <body class="
+  relative
+  mx-auto
+  text-neutral-900
+  cursor-pointer
+  overflow-x-hidden
+  m-0
+  ">
+
+    <!-- Navigator_Bar -->
+    <navbar id="navbar" class="relative container mx-auto text-white">
+      
+      <!-- FLEX CONTAINER  -->
+      <div class="bg-brightblue flex items-center justify-between px-4 py-8 lg:px-20 z-40 sticky top-0 dark:bg-gray-800">
+        
+        <!-- LOGO -->
+        <div class="flex items-center space-x-4 md:w-1/2">
+          <div class="font-amazing font-semibold text-2xl ">
+            <a href="#navbar" class="focus hover:text-gray-300">TechTime</a> 
+          </div>
+          <!-- dark_mode_button -->
+          <button id="theme-toggle" type="button" class="text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-md text-lg p-1">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 md:w-7 md:h-7 bg-whitesmoke rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        
+        <!-- MENU_BAR -->
+        <div class="flex justify-between md:text-[10px] lg:text-sm md:w-1/2">
+          <div class="hidden space-X-4 text-gray-300 md:flex">
+            <a href="#navbar" class="focus hover:text-white transition-colors p-2">Home</a>
+            <a href="#contact" id="contact_btn" class="focus hover:text-white transition-colors p-2">About Us</a>
+            <a href="#course" class="focus hover:text-white transition-colors p-2">Courses </a>
+            <a href="#testimonial" class="focus hover:text-white transition-colors p-2">Testimonial</a>
+            <a href="#community" class="focus hover:text-white transition-colors p-2">Community</a>
+          </div>
+          <!-- BUTTON -->
+          <div class="hidden bg-white text-brightblue p-2 rounded-md font-semibold hover:bg-gray-200 md:flex">
+            Enroll Now
+          </div>
+        </div>
+        
+        <!-- HAMBUGER -->
+        <div class="md:hidden">
+          <button id="menu-open" class="focus transition-all duration-1000">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+          <!-- HAMBUGER_CLOSE -->
+          <button id="menu-close" class="hidden focus transition-all duration-1000">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>          
+          </button>
+        </div>
+      </div>
+      <!-- MOBILE MENU  -->
+      <div id="menu-items" class="hidden fixed top-24 bottom-10 left-2 right-2 z-50 text-center self-end py-8 space-y-4 font-bold bg-blue-600 bg-opacity-90 border-b-2 sm-w-full sm-self-center drop-shadow-md transition-all duration-500 ease-in-out dark:bg-gray-600">
+          <a href="#navbar" class="btn block focus hover:text-white transition-colors p-2">Home</a>
+          <a href="#contact" class="btn block focus hover:text-white transition-colors p-2">About Us</a>
+          <a href="#course" class="btn block focus hover:text-white transition-colors p-2">Courses</a>
+          <a href="#testimonial" class="btn block focus hover:text-white transition-colors p-2">Testimonial</a>
+          <a href="#community" class="btn block focus hover:text-white transition-colors p-2">Community</a>
+      </div>
+    </navbar>
+
+    <!-- Hero section_1 -->
+    <section id="hero" >
+      <!-- Flex Container -->
+      <div class="flex flex-col bg-brightblue items-center pt-8 px-4 mx-auto text-white space-y-0 md:pt-16 md:flex-row md:space-y-0 lg:px-20">
+        <!-- Left Item  -->
+        <div class="relative flex flex-col space-y-6 md:pb-20 md:w-1/2">
+          <div class="hidden justify-between md:mb-20 md:block">
+            <img src="./images/Vector.svg" alt="vector" class="w-2 h-2 absolute left-10">
+            <img src="./images/Vector 2.svg" alt="vector_2" class="w-2 h-2 absolute top-5 right-20 md:right-40">
+          </div>
+          <h1 class="text-3xl font-bold font-arima text-center md:text-4xl md:max-w-sm md:text-left">
+            Grow your skills to advance your career path 
+          </h1>
+          <p class="text-center text-xs md:max-w-xs md:text-left">
+            build your future with our quality education. the best and largest all-in-one online tutoring platform in the world
+          </p>
+          <div class="flex justify-center items-center text-xs max-w-lg space-x-4 md:justify-start">
+            <div class="flex space-x-4 py-2 px-4 bg-brightblue border-2 border-white hover:border-gray-400 transition-colors rounded-md">
+              <a href="/" class="">Get Started Now</a>
+              <img src="./images/arrow_outward.svg" alt="arrow" class="m-0">
+            </div>
+            <a href="/" class="py-2 px-4 bg-white text-brightblue text-center rounded-md hover:bg-gray-300 transition-colors md:block">Enroll Now</a>
+          </div>
+          <!-- VECTOR -->
+          <div class="w-12 h-12 rotate-[70deg] absolute top-60 right-0 md:-right-6 lg:right-10 md:w-20 md:h-20 md:rotate-[5deg]">
+            <img src="./images/Vector 3.png" alt="">
+          </div>
+          <div class="relative flex justify-center ml-12 md:ml-0 md:items-start md:justify-start">
+            <div class="flex">
+              <img src="./images/Frame 95.png" alt="img_1" class="w-10 h-10 absolute left-0">
+              <img src="./images/Frame 96.png" alt="img_2" class="w-10 h-10 absolute left-7">
+              <img src="./images/Frame 97.png" alt="img_2" class="w-10 h-10 absolute left-14">
+              <img src="./images/Frame 98.png" alt="img_2" class="w-10 h-10 absolute left-20">
+              <img src="./images/Frame 99.png" alt="img_2" class="w-10 h-10 absolute left-28">
+            </div>
+            <div class="flex flex-col mb-20 ml-24 md:ml-44 md:mb-0">
+              <h3 class="font-clingy">255k+</h3>
+              <p class="font-arima text-sm">previews</p>
+            </div>
+          </div>
+        </div> 
+        <!-- Right Item  -->
+        <div class="relative md:w-1/2">
+          <img src="./images/Frame 10.png" alt="bulb" class="w-24 h-24 absolute top-10 -left-0 md:w-28 md:h-28 md:-left-3">
+          <img src="./images/Vector.svg" alt="green_dot" class="absolute top-40 left-8 md:left-8">
+          <img src="./images/Frame 88.jpg" alt="svg_dot" class="w-10 h-10 border rounded-md absolute bottom-32 md:bottom-48 md:w-12 md:h-12 md:left-0">
+          <img src="./images/Visual Studio Code - jpeg.jpg" alt="VScode" class="w-10 h-10 border rounded-md absolute right-8 top-10">
+          <img src="./images/Vector tri.png" alt="vector_tri" class="w-6 h-4 absolute top-48 right-4">
+          <img src="./images/Vector 2.svg" alt="yellow_dot" class="w-2 h-2 absolute bottom-16 left-10">
+          <img src="./images/path22.jpg" alt="BMW_Logo" class="w-10 h-10 absolute border-8 border-white rounded-md bottom-4 right-6">
+          <div class="justify-center items-center">
+            <img src="./images/HERO IMAGEE.png" alt="Hero_Image" class="md:w-[450px] md:h-full md:justify-center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVERT_SECTION -->
+    <section id="advert" class=" flex justify-center items-center mx-auto bg-lightgray p-6 space-x-4 md:space-x-8 dark:bg-gray-600">
+      <img src="./images/Zoom.png" alt="zoom" class="w-8 md:w-20">
+      <img src="./images/Stripe.png" alt="stripe" class="w-8 md:w-16">
+      <img src="./images/monday.com svg.png" alt="monday" class="w-20 md:w-36">
+      <img src="./images/Stack.png" alt="stack" class="w-12 md:w-24">
+      <img src="./images/Dropbox svg.png" alt="dropbox" class="w-12 md:w-28">
+    </section>
+
+    <section class="bg-whitesmoke dark:bg-gray-800">
+      <!-- COURSE_SECTION -->
+      <section id="course">
+        <!-- Flex_container -->
+        <div class="container flex flex-col pt-20 px-4 mx-auto space-y-8 md:pt-5 md:space-x-4 md:space-y-0 md:flex-row">
+          <!-- TEXT  -->
+          <div class="relative flex flex-col space-y-8 text-center md:pl-10 md:pt-16 md:pb-12 md:w-1/2 md:text-left lg:pl-20">
+            <img src="./images/Vector.png" alt="crown_vector" class="w-7 h-7 absolute left-3 top-3 md:w-6 md:h-6 md:left-7 md:top-20 lg:left-16">
+            <h2 class="max-w-md text-xl font-extrabold font-arima mt-10 md:mt-0 md:text-3xl dark:text-white">
+              High quality video, audio & live classes
+            </h2>
+            <p class="capitalize text-sm text-tinytext text-center md:text-left md:max-w-sm">
+              high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+            </p>
+            <div>
+              <a href="/" class="w-1/3 py-2 px-4 bg-brightblue text-white text-center rounded-sm hover:bg-gray-200 transition-colors dark:hover:text-brightblue">View Course</a>
+            </div>
+            <div class="flex flex-col space-y-4 text-xs font-bold justify-center items-center md:items-start">
+              <div class="flex space-x-3">
+                <div class="flex items-center space-x-4 w-max bg-white p-3 pr-8 md:space-x-2 rounded-md">
+                  <img src="./images/volume_up.png" alt="volume" class="w-7 h-7 bg-green-200 p-2 rounded-sm"><span>Audio Classes</span>
+                </div>
+                <div class="flex items-center space-x-4 w-max bg-white p-3 pr-8 md:space-x-2 rounded-md">
+                  <img src="./images/settings_input_antenna.png" alt="live_antenna" class="w-7 h-7 bg-red-200 p-2 rounded-sm"><span>Live Classes</span>
+                </div>
+              </div>
+              <div class="flex space-x-3">
+                <div class="flex items-center space-x-4 w-max bg-white p-3 pr-8 md:space-x-2 rounded-md">
+                  <img src="./images/autoplay.png" alt="autoplay" class="w-7 h-7 bg-purple-200 p-2 rounded-sm"><span>Recorded Classes</span>
+                </div>
+                <div class="flex items-center space-x-4 w-max bg-white p-3 pr-8 md:space-x-2 rounded-md">
+                  <img src="./images/description.png" alt="Clipboard" class="w-7 h-7 bg-blue-200 p-2 rounded-sm"><span>50+ Notes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PICTURE -->
+          <div class="relative flex justify-center pl-12 pb-10 md:items-start md:pt-20 md:pl-0 md:pb-20 md:w-1/2 lg:pt-10 lg:items-center">
+            <img src="./images/Vector_green.png" alt="zigzag_vector" class="hidden absolute w-10 top-5 -right-4 md:block">
+            <img src="./images/unsplash_image2.png" alt="man_with laptop" class="absolute z-20 w-36 left-3 bottom-2 md:bottom-52 md:left-8 lg:w-60 lg:-left-14 lg:bottom-12">
+            <img src="./images/Frame 113.png" alt="roll_of_student_image" class="absolute z-20 w-24 left-3 top-14 md:w-24 md:left-6 md:top-32 lg:left-8 lg:top-44 lg:w-32">
+            <img src="./images/unsplash_laptop.png" alt="man_with_laptop" class="z-10 mx-auto w-60 md:ml-24 lg:mx-auto lg:w-96">
+            <img src="./images/Vector-dot.png" alt="vector_dot" class="absolute w-24 bottom-3 right-0 md:w-28 md:bottom-56 md:right-0 lg:bottom-24 lg:right-16 lg:w-40">
+          </div>
+        </div>
+      </section>
+  
+      <!-- KNOW US_SECTION-->
+      <section id="know_us">
+        <!-- FLEX_CONTAINER  -->
+        <div class="flex flex-col justify-center mx-auto px-4 pt-10 pb-10 md:flex-row md:pt-0 md:space-x-0 lg:pt-10">
+          <!-- TEXT  -->
+          <div class="relative flex flex-col space-y-6 text-center md:w-1/2 md:text-left md:pl-10 md:pt-16 lg:pl-20 lg:pt-0 lg:space-y-8">
+            <h2 class="text-2xl font-bold md:text-3xl lg:text-4xl dark:text-white">
+              This is why we are best from others
+            </h2>
+            <p class="capitalize text-xs text-tinytext md:max-w-sm">
+              high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+            </p>
+            <img src="./images/unsplash_3_laptop.png" alt="man_with_laptop" class="hover:shadow-md">
+            <img src="./images/green_tri.png" alt="green_triangle" class="hidden w-4 absolute left-3 bottom-28 md:block">
+          </div>
+
+          <!-- CARD  -->
+          <div class="relative flex flex-col items-center space-y-2 pt-6 md:p-6 md:pr-2 lg:space-y-4 md:w-1/2 lg:p-10">
+            
+            <img src="./images/orange_zig.png" alt="orange_zigzag" class="hidden absolute w-10 top-0 left-52 lg:block">
+
+            <!-- ROW_1  -->
+            <div class="flex items-center justify-center space-x-2 lg:space-x-4">
+              <div class="flex-col justify-center space-y-4 bg-white p-4 shadow-md">
+                <img src="./images/cast_for_education.png" alt="education_img" class="w-6 bg-blue-600 p-1 rounded-sm lg:w-10 lg:p-3">
+                <h6 class="font-bold text-xs lg:text-sm">
+                  Experienced Mentors
+                </h6>
+                <p class="text-xs text-tinytext">
+                  high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. 
+                </p>
+              </div>
+              <div class="flex-col justify-center space-y-4 bg-white p-4 shadow-md">
+                <img src="./images/schedule.png" alt="schedule_img" class="w-6 bg-green-300 p-1 rounded-sm lg:w-10 lg:p-3">
+                <h6 class="font-bold text-xs lg:text-sm">
+                  One-On-One Meetings
+                </h6>
+                <p class="text-xs text-tinytext">
+                  high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. 
+                </p>
+              </div>
+            </div>
+            <!-- ROW_2  -->
+            <div class="flex items-center justify-center space-x-2 lg:space-x-4">
+              <div class="flex-col justify-center space-y-4 bg-white p-4 shadow-md">
+                <img src="./images/groups.png" alt="group_img" class="w-6 bg-pink-400 p-1 rounded-sm lg:w-10 lg:p-3">
+                <h6 class="font-bold text-xs lg:text-sm">
+                  One-On-One Meetings
+                </h6>
+                <p class="text-xs text-tinytext">
+                  high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. 
+                </p>
+              </div>
+              <div class="flex-col justify-center space-y-4 bg-white p-4 shadow-md">
+                <img src="./images/local_atm.png" alt="local_atm_img" class="w-6 bg-red-400 p-1 rounded-sm lg:w-10 lg:p-3">
+                <h6 class="font-bold text-xs lg:text-sm">
+                  Affordable Prices
+                </h6>
+                <p class="text-xs text-tinytext">
+                  high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition. 
+                </p>
+              </div>
+            </div>
+            <img src="./images/puple_circle.png" alt="purple_circle" class="hidden absolute w-4 bottom-0 right-0 md:block">
+            <img src="./images/green_tri.png" alt="green_triangle" class="w-2 absolute -left-3 bottom-5 md:hidden">
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR_COURSES  -->
+      <section id="course_2">
+        <!-- FLEX_CONTAINER -->
+        <div class="flex flex-col items-center relative px-4 pt-5 mb-20">
+          <!-- TEXT  -->
+          <div class=" flex flex-col mx-auto items-center space-y-4 text-center pb-10">
+            <h2 class="text-2xl font-bold lg:text-3xl dark:text-white">
+              Browse Our Popular Courses
+            </h2>
+            <p class="capitalize text-xs text-center text-tinytext md:px-28 lg:text-sm lg:px-36">
+              high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+            </p>
+            <div class="flex items-center text-xs text-tinytext md:text-sm md:pt-5 md:space-x-10">
+              <a href="#" class="courses_btn">All Categories </a>
+              <a href="#" class="courses_btn">Design</a>
+              <a href="#" class="courses_btn">Development</a>
+              <a href="#" class="courses_btn">Marketing</a>
+            </div>
+            <img src="./images/Vector_blue.png" alt="vector_blue" class="absolute w-6 left-3 -top-6 md:left-12 md:top-28 lg:left-20">
+          </div>
+          <!-- CARDS DIV -->
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:px-10 lg:px-20">
+            <!-- CARD_1 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (6).png" alt="design_pic" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Design</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (32.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to user research in UX Design
+              </p>
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>23hrs 50mins</h6>
+                </div>
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>15 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/victor.png" alt="victor_img" class="w-6 md:w-10">
+                  <h6>Leonard Victor</h6>
+                </div>
+                <h6 class="text-brightblue">$15.00</h6>
+              </div>
+            </div>
+            <!-- CARD_2 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (5).png" alt="marketing_pic" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Marketing</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (8.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to  new marketing audience 
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>22hrs 30mins</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>22 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/jefrey.png" alt="Jeffrey" class="w-6 md:w-10">
+                  <h6>Jeffrey Williams</h6>
+                </div>
+                <h6 class="text-brightblue">$32.00</h6>
+              </div>
+            </div>
+            <!-- CARD_3 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (4).png" alt="computing_pic" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-2 lg:px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Development</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (12.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to HTML, CSS & TAILWINDCSS
+              </p>
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>45hrs 50mins</h6>
+                </div>
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>55 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/mason.png" alt="manson_img" class="w-6 md:w-10">
+                  <h6>Claretta Mason</h6>
+                </div>
+                <h6 class="text-brightblue">$55.00</h6>
+              </div>
+            </div>
+            <!-- CARD_4 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (3).png" alt="coding_pic" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Coding</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (38.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to Javascript, Git & GitHub 
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>30hrs 50mins</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>22 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/duke.png" alt="Jessica_img" class="w-6 md:w-10">
+                  <h6>Jessica Duke</h6>
+                </div>
+                <h6 class="text-brightblue">$45.00</h6>
+              </div>
+            </div>
+            <!-- CARD_5 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (2).png" alt="meeting_img" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Marketing</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (8.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to outroom  marketing analysis 
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>33hrs 50mins</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>26 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/samuel.png" alt="Samuel_img" class="w-6 md:w-10">
+                  <h6>Samuel Jacobs</h6>
+                </div>
+                <h6 class="text-brightblue">$25.00</h6>
+              </div>
+            </div>
+            <!-- CARD_6 -->
+            <div class="flex flex-col space-y-4 bg-white p-2 pt-6 rounded-lg shadow-md font-bold md:pt-2 lg:p-4">
+              <img src="./images/img (1).png" alt="analysis_img" class="w-full">
+              <div class="flex justify-between">
+                <h6 class="bg-blue-200 px-4 py-1 text-brightblue text-[8px] rounded-xl md:text-xs">Marketing</h6>
+                <div class="flex justify-evenly items-center text-[8px] text-tinytext gap-1 md:text-xs">
+                  4.7k <img src="./images/grade.png" alt="rate_star" class="w-4 h-4"> (15.7k+)
+                </div>
+              </div>
+              <p class="pr-4 text-xs lg:text-sm">
+                Introduction to live  marketing analysis 
+              <div class="flex justify-between items-center text-tinytext text-[8px] md:text-xs">
+                <div class="flex items-center gap-1 md:gap-2">
+                  <img src="./images/schedule_2.png" alt="schedule_img" class="w-3 lg:w-6">
+                  <h6>10hrs 50mins</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="./images/menu_book.png" alt="menu_book" class="w-3 lg:w-6">
+                  <h6>32 lessons</h6>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-[8px] pt-4 md:text-xs lg:text-sm">
+                <div class="flex items-center gap-2">
+                  <img src="./images/adam.png" alt="adam_img" class="w-6 md:w-10">
+                  <h6>Adam Smith</h6>
+                </div>
+                <h6 class="text-brightblue">$25.00</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Explore All Courses BTN -->
+          <div class="pt-10 text-xs md:text-sm">
+            <a href="/" class="w-1/3 py-2 px-4 bg-brightblue text-white text-center rounded-sm hover:bg-gray-200 transition-colors dark:hover:text-brightblue">Explore All Courses</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonial" class="pt-28 pb-10">
+        <!-- FLEX_CONTAINER  -->
+        <div class="">
+          <!-- TEXT  -->
+          <div class=" flex flex-col mx-auto items-center space-y-4 text-center p-4">
+            <h2 class="uppercase font-arima font-bold lg:text-2xl dark:text-white">
+              what our clients are saying
+            </h2>
+            <p class="capitalize text-xs text-center text-tinytext md:px-28 lg:text-sm lg:px-40">
+              high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+            </p>
+          </div>
+          <!-- TESTIFIERS ROWS-->
+          <div id="default-carousel" class="relative items-center p-4 md:px-40 lg:px-56" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-64 overflow-hidden rounded-lg">
+              <!-- Item 1 -->
+              <div class="hidden shadow-lg duration-700 ease-in-out" data-carousel-item>
+                <div class="bg-white p-4 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <p class="">
+                    High-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt illum quas adipisci vel repellendus nulla cumque necessitatibus ex dolor.
+                  </p>
+                  <div class="flex items-center gap-2 capitalize text-[8px] pt-4 p md:text-xs lg:text-sm">
+                    <img src="./images/mason.png" alt="manson_img" class="border-2 rounded-full w-8 md:w-10">
+                    <div class="gap-2">
+                      <h6 class="text-black font-bold">claretta mason</h6>
+                      <h6 class="text-xs font-bold">product designer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden shadow-lg duration-700 ease-in-out" data-carousel-item>
+                <div class="bg-white p-4 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <p class="">
+                    High-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt illum quas adipisci vel repellendus nulla cumque necessitatibus ex dolor.
+                  </p>
+                  <div class="flex items-center gap-2 capitalize text-[8px] pt-4 md:text-xs lg:text-sm">
+                    <img src="./images/bella.png" alt="bella_img" class="border-2 rounded-full w-8 md:w-10">
+                    <div class="gap-2">
+                      <h6 class="text-black font-bold">bella moon</h6>
+                      <h6 class="text-xs font-bold">product designer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="bg-white p-4 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <p class="">
+                    High-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt illum quas adipisci vel repellendus nulla cumque necessitatibus ex dolor.
+                  </p>
+                  <div class="flex items-center gap-2 capitalize text-[8px] pt-4 md:text-xs lg:text-sm">
+                    <img src="./images/fortune.png" alt="fortune_img" class="border-2 rounded-full w-6 md:w-10">
+                    <div class="gap-2">
+                      <h6 class="text-black font-bold">samuel fortune</h6>
+                      <h6 class="text-xs font-bold">market analyst</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="bg-white p-4 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <p class="">
+                    High-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt illum quas adipisci vel repellendus nulla cumque necessitatibus ex dolor.
+                  </p>
+                  <div class="flex items-center gap-2 capitalize text-[8px] pt-4 md:text-xs lg:text-sm">
+                    <img src="./images/jason.png" alt="jason_img" class="border-2 rounded-full w-6 md:w-10">
+                    <div class="gap-2">
+                      <h6 class="text-black font-bold">bryce jason</h6>
+                      <h6 class="text-xs font-bold">product analyst</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="bg-white p-4 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <p class="">
+                    High-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt illum quas adipisci vel repellendus nulla cumque necessitatibus ex dolor.
+                  </p>
+                  <div class="flex items-center gap-2 capitalize text-[8px] pt-4 md:text-xs lg:text-sm">
+                    <img src="./images/samuel.png" alt="samuel_img" class="border-2 rounded-full w-6 md:w-10">
+                    <div class="gap-2">
+                      <h6 class="text-black font-bold">samuel jason</h6>
+                      <h6 class="text-xs font-bold">product analyst</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 -bottom-5 md:-bottom-2 left-1/2 bg-gray-400 dark:bg-gray-200 p-2 rounded-md bg-opacity-30">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="top absolute top-0 left-0 z-30 md:left-5 flex items-center justify-center h-full px-14 cursor-pointer group focus:outline-none md:px-0" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-white opacity-70 dark:bg-gray-400 group-hover:bg-whitesmoke dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-gray-300 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-14 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-6 h-6 md:w-10 md:h-10 rounded-full bg-white opacity-70 dark:bg-gray-400 group-hover:bg-whitesmoke dark:group-hover:bg-gray-800/60 group-focus:ring-2 group-focus:ring-gray-300 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- COMMUNITY_SECTION -->
+    <section id="community">
+      <!-- FLEX_CONTAINER -->
+      <div class="flex flex-col items-center bg-brightblue pt-24 pb-8 px-4">
+        <!-- TEXT  -->
+        <div class="flex flex-col space-y-4 font-semi-bold text-center text-white mt-4">
+          <h6 class="text-xs uppercase">join our community</h6>
+          <h1 class="max-w-2xl tracking-wider font-arima lg:text-3xl">Are you  ready to connect with the future talent of the tech world</h1>
+          <h6 class="capitalize text-xs">meet up with other techstars and grow together</h6>
+        </div>
+        <!-- IMAGE -->
+        <img src="./images/Frame 209.png" alt="community_Img" class="mt-10 md:max-w-lg">
+        <!-- Join Our Community BTN -->
+        <div class="pt-10 text-xs md:text-sm">
+          <a href="/" class="w-1/3 py-2 px-4 bg-white font-bold text-brightblue text-center rounded-sm hover:bg-gray-200 transition-colors">Join Our Community</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ SECTION  -->
+    <section id="faq">
+      <!-- FLEX_CONTAINER -->
+      <div class="relative flex flex-col space-y-8 bg-white px-4 py-5 pb-20 dark:bg-gray-800">
+
+        <!-- blue_circle_vector -->
+        <img src="./images/blue_vector.png" alt="blue_circle_vector" class="w-4 absolute right-5 md:top-16 md:right-28">
+        <!-- orange_zigzag  -->
+        <img src="./images/orange_zig.png" alt="orange_zigzag" class="w-6 absolute top-36 -left-3 md:w-10 md:top-48 md:-left-1">
+        <!-- section_shape_1 -->
+        <img src="./images/section_shape_1.png" alt="section_shape_1" class="w-12 absolute bottom-0 left-0">
+        <!-- section_shape_2 -->
+        <img src="./images/section_shape_2.png" alt="section_shape_2" class="hidden w-12 absolute right-3 md:block">
+        <img src="./images/Vector 2.svg" alt="orange_dot" class="hidden absolute bottom-24 right-14 md:block">
+         
+        <!-- TEXT  -->
+        <div class="flex flex-col space-y-8 text-center my-4">
+          <h1 class="tracking-wider font-bold capitalize lg:text-3xl dark:text-white">frequently asked questions</h1>
+          <h6 class="capitalize text-center text-tinytext text-xs md:px-28 lg:px-40">
+            high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+          </h6>
+        </div>
+        <!-- QUESTIONS  -->
+        <div class="flex flex-col space-y-10 z-10 md:pt-10 md:px-32">
+          <div id="accordion-collapse" data-accordion="collapse">
+            <!-- Question_1 -->
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left dark:text-gray-400" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                <span class="text-brightblue">Is there a free trial available?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+            <!-- Question_2 -->
+            <h2 id="accordion-collapse-heading-2">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left text-neutral-900 dark:text-gray-400" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                <span class="text-brightblue">Can i change my plan later?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+            <!-- Question_3 -->
+            <h2 id="accordion-collapse-heading-3">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left text-neutral-900 dark:text-gray-400" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                <span class="text-brightblue">Are the courses lifetime?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+            <!-- Question_4 -->
+            <h2 id="accordion-collapse-heading-4">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left text-neutral-900 dark:text-gray-400" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                <span class="text-brightblue">Do i get certified after taking courses?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+            <!-- Question_5 -->
+            <h2 id="accordion-collapse-heading-5">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left text-neutral-900 dark:text-gray-400" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                <span class="text-brightblue">How do i reach out to mentors?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+            <!-- Question_6 -->
+            <h2 id="accordion-collapse-heading-6">
+              <button type="button" class="flex items-center justify-between w-full p-3 font-medium text-left text-neutral-900 dark:text-gray-400" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                <span class="text-brightblue">How do i reach out to mentors?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-brightblue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+              <div class="p-4 dark:bg-gray-900">
+                <h6 class="capitalize text-tinytext text-xs">
+                  high-defination video is video of higher resolution and quality than standard definition. while there's no standard meaning for high definition, generally any standard video image
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT_US -->
+
+    <footer id="contact">
+      <!-- FLEX_CONTAINER -->
+      <div class="flex flex-col justify-between space-y-6 bg-darkSlate text-white text-left pt-28 pb-20 px-4 md:flex-row md:space-y-0 lg:px-10 lg:pb-40">
+      <!-- <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-6 bg-darkSlate text-white text-left py-20 px-4 md:space-y-0 md:py-20 lg:px-10 lg:pb-40"> -->
+        <!-- footer_1 -->
+        <div class="flex flex-col space-y-4   ">
+          <div class="font-amazing font-semibold text-xl tracking-wider">
+            <a href="#navbar" class="focus">TechTime</a> 
+          </div>
+          <p class="text-xs pr-5">Reach out to us on any of our social media networks</p>
+          <div class="flex items-center space-x-4">
+            <a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook_img" class="w-5"></a>
+            <a href="https://twitter.com"><img src="./images/twitter.png" alt="twitter_img" class="w-5"></a>
+            <a href="https://youtube.com"><img src="./images/youtube.png" alt="youtube_img" class="w-5"></a>
+            <a href="https://instagram.com"><img src="./images/instagram.png" alt="instagram_img" class="w-5"></a>
+            <a href="https://linkedln.com"><img src="./images/eskimo.png" alt="linkedln_img" class="w-5"></a>
+          </div>
+        </div>
+        <!-- footer_2 -->
+        <div class="flex flex-col justify-c  enter space-y-2">
+          <p class="font-semibold text-xl tracking-wider">Useful Links</p>
+          <div class="flex flex-col text-xs">
+            <a href="# navbar" class="focus hover:text-white transition-colors p-2">Home</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">About Us</a>
+            <a href="#course" class="focus hover:text-white transition-colors p-2">Our Courses</a>
+            <a href="#testimonial" class="focus hover:text-white transition-colors p-2">Testimonials</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">Our Community</a>
+          </div>
+        </div>
+        <!-- footer_3 -->
+        <div class="flex flex-col space-y-2  ">
+          <p class="font-semibold text-xl tracking-wider">Community</p>
+          <div class="flex flex-col text-xs">
+            <a href="" class="focus hover:text-white transition-colors p-2">Help Centers</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">Partners</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">Suggestion</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">Blog</a>
+            <a href="" class="focus hover:text-white transition-colors p-2">Newsletter</a>
+          </div>
+        </div>
+        <!-- footer_4 -->
+        <form action="" class="flex flex-col space-y-4">
+          <p class="font-semibold text-xl tracking-wider">Subscribe Us</p>
+          <div class="flex text-sm border-2 border-brightblue w-max">
+            <input type="email" class="bg-slate-800 py-2 px-3 focus:outline-none text-xs" placeholder="your_email@gmail.com" >
+            <a href="" class=" bg-brightblue p-2 text-xs">Send Message</a>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    
+  </body>
+</html>
